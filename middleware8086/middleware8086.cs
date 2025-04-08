@@ -33,8 +33,7 @@ public class Form1 : Form
     private SortedDictionary<(int, int, int), (string, bool)> holdingQueue = new SortedDictionary<(int, int, int), (string, bool)>();
     Queue<string> deliverQueue = new Queue<string>();
     private Dictionary<int, List<int>> proposedTimestamps = new Dictionary<int, List<int>>();
-    private readonly object queueLock = new object();
-    private readonly object clockLock = new object();
+    
 
     public Form1()
     {
